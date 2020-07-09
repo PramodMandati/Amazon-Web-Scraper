@@ -8,7 +8,7 @@ def scrape_this_url():
     global driver
     div=driver.find_element_by_css_selector('div.s-result-list.s-search-results.sg-row')
     div2=div.find_elements_by_css_selector('div.sg-col-20-of-24.s-result-item.sg-col-0-of-12.sg-col-28-of-32.sg-col-16-of-20.sg-col.sg-col-32-of-36.sg-col-12-of-16.sg-col-24-of-28')
-    with open('c:/users/anile/desktop/Scraper.txt','a') as f:
+    with open('c:/users/<username>/desktop/Scraper.txt','a') as f:
         for i in div2:
             try:
                 #price_div=i.find_element_by_css_selector('a.a-size-base.a-link-normal.s-no-hover.a-text-normal')
